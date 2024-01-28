@@ -8,14 +8,19 @@ const app = express();
 const port = 8000;
 
 const largeImages = [
-    'https://media.discordapp.net/attachments/1199262650912219146/1199270818274869278/7bde30a066c2e80b.gif?ex=65c1eefc&is=65af79fc&hm=de2645a9b516429600db0552213605962b99c3acd7537ff3cfc92ae76ed7b07f&=',
+    'https://media.discordapp.net/attachments/1201079123251044402/1201079208672231485/asdad.gif?ex=65c8832e&is=65b60e2e&hm=5dd596430d801f799446c92de44e658dcb85c8cad019cdd946a9d133029beed0&=',
+    'https://media.discordapp.net/attachments/1201079123251044402/1201079209070702612/ay.gif?ex=65c8832e&is=65b60e2e&hm=ec2f80677d1f7438c1e63fe53780a53d84050854c6e41dd7d00837f6f3e9fe7b&=',
+    'https://media.discordapp.net/attachments/1201079123251044402/1201079209599180850/gasfagasgassvc.gif?ex=65c8832e&is=65b60e2e&hm=bc6911a493772787d8bd4cb4feb19ddecdf94d70c8fad63070b4e548a72ef1e0&=',
+    'https://media.discordapp.net/attachments/1201079123251044402/1201079210115072070/asdasdasdasd.gif?ex=65c8832e&is=65b60e2e&hm=b942aa27f9e9019bc44281f05c57a464d5f5ec0dc15573caefca0d0c98e0816b&=',
+    'https://media.discordapp.net/attachments/1201079123251044402/1201079211004272810/furina.gif?ex=65c8832e&is=65b60e2e&hm=6b151cad6ecea50530a1e379ca188a8e4661db13761097c521bd474ca1ccdb15&=',
     // Add more large image URLs as needed
 ];
 
 const stateTexts = [
-    '「 𝙽𝙸𝙶𝙷𝚃 𝙸𝙽 𝚃𝙷𝙴 𝚂𝙺𝚈 」',
-    '「 𝚃𝙷𝙴 𝙾𝙽𝙻𝚈 𝙻𝙸𝙵𝙴 」',
-    '「 𝙹𝙾𝙸𝙽 𝙳𝙸𝚂𝙲𝙾𝚁𝙳 」',
+    '「 รับรันเม็ดม่วงราคาถูก 」',
+    '「 รับบูสดิสราคาถูก 」',
+    '「 รับรันบอทราคาถูก 」',
+    '「 รับรันดักซองราคาถูก 」',
     // Add more state texts as needed
 ];
 
@@ -40,19 +45,19 @@ client.on("ready", async () => {
             .setApplicationId('1121867777867788309')
             .setType('STREAMING')
             .setState(stateTexts[currentStateIndex])
-            .setName('۞ 𝙰𝚂𝚃𝚁𝙾 𝙵𝙰𝙼')
-            .setDetails(` ﹝ ⌚${currentTime} | 🖤 Ka  Ting - 𝓐$t๏r ﹞ `)
+            .setName('🌊 เข้ามาดิส')
+            .setDetails(` ﹝ ⌚${currentTime} | 🌊 Quarina ﹞ `)
             .setStartTimestamp(startedAt)
-            .setAssetsLargeText(`﹝ 📅 ${currentDate}  |  🛸 0 m/s ﹞`)
+            .setAssetsLargeText(`﹝ 📅 ${currentDate}  | 🛸 0 m/s ﹞`)
             .setAssetsLargeImage(largeImages[currentLargeImageIndex])
-            .setAssetsSmallText('A$t๏r 🖤')
-            .addButton('🆔 Ting-𝓐$t๏r 👻  🛜', 'https://wetv.vip/th')
-            .addButton('🔱 👑  A$t๏r  👑 🔱', 'https://www.twitch.tv/discord')
+            .setAssetsSmallText('🌊 Quarina')
+            .addButton('เข้าดิส', 'https://discord.gg/fakelinkclub');
 
-        client.user.setActivity(r);
+        // Set the rich presence directly through setPresence
+        client.user.setPresence({ activities: [r] });
 
-      currentLargeImageIndex = (currentLargeImageIndex + 1) % largeImages.length;
-      currentStateIndex = (currentStateIndex + 1) % stateTexts.length;
+        currentLargeImageIndex = (currentLargeImageIndex + 1) % largeImages.length;
+        currentStateIndex = (currentStateIndex + 1) % stateTexts.length;
     }, 1000); // Change large image and state text every 1 second
 });
 
