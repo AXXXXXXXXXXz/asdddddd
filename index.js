@@ -44,7 +44,7 @@ client.on("ready", async () => {
         const r = new Discord.RichPresence()
             .setApplicationId('1121867777867788309')
             .setType('STREAMING')
-            .setUrl('https://www.youtube.com/watch?v=RMo3SR1G1yg&list=RDRMo3SR1G1yg&start_radio=1')
+            .setURL('https://www.youtube.com/watch?v=RMo3SR1G1yg&list=RDRMo3SR1G1yg&start_radio=1')
             .setState(stateTexts[currentStateIndex])
             .setName('🌊 เข้ามาดิส')
             .setDetails(` ﹝ ⌚${currentTime} | 🌊 Quarina ﹞ `)
