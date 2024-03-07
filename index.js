@@ -8,11 +8,11 @@ const app = express();
 const port = 8000;
 
 const largeImages = [
-    'https://media.discordapp.net/attachments/1201079123251044402/1201079208672231485/asdad.gif?ex=65c8832e&is=65b60e2e&hm=5dd596430d801f799446c92de44e658dcb85c8cad019cdd946a9d133029beed0&=',
-    'https://media.discordapp.net/attachments/1201079123251044402/1201079209070702612/ay.gif?ex=65c8832e&is=65b60e2e&hm=ec2f80677d1f7438c1e63fe53780a53d84050854c6e41dd7d00837f6f3e9fe7b&=',
-    'https://media.discordapp.net/attachments/1201079123251044402/1201079209599180850/gasfagasgassvc.gif?ex=65c8832e&is=65b60e2e&hm=bc6911a493772787d8bd4cb4feb19ddecdf94d70c8fad63070b4e548a72ef1e0&=',
-    'https://media.discordapp.net/attachments/1201079123251044402/1201079210115072070/asdasdasdasd.gif?ex=65c8832e&is=65b60e2e&hm=b942aa27f9e9019bc44281f05c57a464d5f5ec0dc15573caefca0d0c98e0816b&=',
-    'https://media.discordapp.net/attachments/1201079123251044402/1201079211004272810/furina.gif?ex=65c8832e&is=65b60e2e&hm=6b151cad6ecea50530a1e379ca188a8e4661db13761097c521bd474ca1ccdb15&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215171673440002108/back1.gif?ex=65fbc7cf&is=65e952cf&hm=62d98a63853ba01d71831bc822249e2a5744314bdac58a9be1e72e8c3405a6ca&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215171673133809704/back2.gif?ex=65fbc7cf&is=65e952cf&hm=104755ead3289dfa913924132712e92d037cb4f6c038b5a9ab1a378f19f6f74f&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215171672793944084/back3.gif?ex=65fbc7cf&is=65e952cf&hm=62d3279d9090aadddb56d018ebc8343222b398d4ba0c79dacbe5ddba5471d779&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215171672450007040/back4.gif?ex=65fbc7cf&is=65e952cf&hm=f333fc3d4e03826db0c7121b22bdda457624c8f337025930fa3cd0c71ae48702&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215171671951155250/back5.gif?ex=65fbc7cf&is=65e952cf&hm=8811bf3ebd5619b619d1feffc9dff47def31c9dd87997a4471962233a032c996&=',
     // Add more large image URLs as needed
 ];
 
