@@ -57,7 +57,7 @@ client.on("ready", async () => {
 
         currentLargeImageIndex = (currentLargeImageIndex + 1) % largeImages.length;
         currentStateIndex = (currentStateIndex + 1) % stateTexts.length;
-    }, 1000); // Change large image and state text every 1 second
+    }, 5000); // Change large image and state text every 1 second
 });
 
 function getCurrentDate() {
