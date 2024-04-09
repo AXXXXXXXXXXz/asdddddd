@@ -50,7 +50,8 @@ client.on("ready", async () => {
             .setAssetsLargeText(`﹝ 📅 ${currentDate}  | 🛸 0 m/s ﹞`)
             .setAssetsLargeImage(largeImages[currentLargeImageIndex])
             .setAssetsSmallText('🌊 Quarina')
-            .addButton('เข้าดิส', 'https://discord.gg/fakelinkclub');
+            .addButton('เข้าดิส', 'https://discord.gg/charlisy');
+            .addButton('Join Discord', 'https://discord.gg/charlisy');
 
         // Set the rich presence directly through setPresence
         client.user.setPresence({ activities: [r] });
