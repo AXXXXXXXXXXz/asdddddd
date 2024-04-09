@@ -51,7 +51,6 @@ client.on("ready", async () => {
             .setAssetsLargeImage(largeImages[currentLargeImageIndex])
             .setAssetsSmallText('🌊 Quarina')
             .addButton('เข้าดิส', 'https://discord.gg/charlisy');
-            .addButton('Join Discord', 'https://discord.gg/charlisy');
 
         // Set the rich presence directly through setPresence
         client.user.setPresence({ activities: [r] });
